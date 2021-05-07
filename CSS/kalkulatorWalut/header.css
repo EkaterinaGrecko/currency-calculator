@@ -1,0 +1,9 @@
+.header {
+    color: rgb(86, 16, 85);
+    font-family: "Cinzel Decorative";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 30px auto;
+}

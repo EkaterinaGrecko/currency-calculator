@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <link rel="icon" href="images/icon.png">
+    <meta property="og:image" content="images/share.png">
+    <link href="CSS/kalkulatorWalut/style.css" rel="stylesheet">
+    <link href="CSS/kalkulatorWalut/container.css" rel="stylesheet">
+    <link href="CSS/kalkulatorWalut/list.css" rel="stylesheet">
+    <link href="CSS/kalkulatorWalut/header.css" rel="stylesheet">
+    <link href="CSS/kalkulatorWalut/images.css" rel="stylesheet">
+    <link href="CSS/kalkulatorWalut/form.css" rel="stylesheet">
+    <link href="CSS/kalkulatorWalut/footer.css" rel="stylesheet">
+    <script defer src="js/kalkulatorWalut.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body class="body">
+    <div class="container">
+        <header>
+            <h1 class="header">Wymiana walut online</h1>
+        </header>
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walut</legend>
+                <ul class="list">
+                    <li>
+                        <label>
+                            Wybierz operację:
+                            <select class="form__label js-operations" name="operations">
+                                <option value="buy">Kupno</option>
+                                <option value="sell">Sprzedaż</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            Wybierz walutę:
+                            <select class="form__label js-currency" name="currency">
+                                <option value="GBP">🇬🇧 GBP-Funt Brytyjski</option>
+                                <option value="EUR">🇪🇺 EUR-Euro</option>
+                                <option value="USD">🇺🇸 USD-Dolar Amerykański</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            Podaj kwotę waluty:
+                            <input class="form__label js-sum" type="number" placeholder="Wpisz kwotę" name="sum" min="1"
+                                step="any" required>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            Otrzymasz:
+                            <p class="form__result js-result" name="result"></p>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button class="form__button">Przelicz</button>
+        </form>
+        <footer class="footer">
+            <p class="footer__text">&copy;Copyright Ekaterina Grecko 2021</p>
+        </footer>
+    </div>
+</body>
+
+</html>

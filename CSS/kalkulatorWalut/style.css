@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    margin: 0 auto;
+    max-width: 500px;
+    background-image: url("https://i.ibb.co/K5FPxRd/shutterstock-245179702-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
